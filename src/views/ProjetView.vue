@@ -1,15 +1,31 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="container-projet">
+    <div class="overlay-projet">
+      <p>LE PROJET</p>
+    </div>
   </div>
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+.container-projet {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.overlay-projet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("../assets/pr_racing7.jpg") center/cover no-repeat;
+  width: 100%;
+  height: 1000px;
+  padding: 20px;
+}
+
+.overlay-projet p {
+  margin: 0px;
+  font-size: 112px;
+  color: white;
 }
 </style>

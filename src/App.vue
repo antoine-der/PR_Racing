@@ -113,7 +113,7 @@ nav a {
   text-decoration: none;
   font-size: 29px;
   font-weight: bold;
-  color: black;
+  color: white;
   transition: 0.4s;
   font-family: Poppins;
 }
