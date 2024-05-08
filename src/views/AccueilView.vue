@@ -150,7 +150,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #dbe2dd;
+  background-color: #580092;
   width: 100%;
   height: 100%;
 }
@@ -167,13 +167,14 @@
 
 .association-span span {
   width: 90%;
+  color: white;
 }
 
 .beeQuad {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #c7cec9;
+  background-color: #dbe2dd;
   width: 100%;
   height: 100%;
 }
@@ -196,7 +197,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #C266FF;
+  background-color: #c7cec9;
   width: 100%;
   height: 100%;
 }

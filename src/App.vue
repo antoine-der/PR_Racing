@@ -17,6 +17,7 @@ onMounted(() => {
   // Appel à handleScroll lors du chargement initial de la page
   handleScroll();
 });
+
 </script>
 
 <template>
@@ -95,7 +96,7 @@ nav {
   display: flex;
   align-items: center;
   text-decoration: none;
-  background-color: #C266FF;
+  background-color: #580092;
 }
 
 .transparent-background {

@@ -1,5 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AccueilView from '../views/AccueilView.vue'
+import ShoppingView from '../views/ShoppingView.vue'
+import ActualiteView from '../views/ActualiteView.vue'
+import TeamView from '../views/TeamView.vue'
+import SaisonView from '../views/SaisonView.vue'
+import ProjetView from '../views/ProjetView.vue'
+import GalerieView from '../views/GalerieView.vue'
+import PartenairesView from '../views/PartenairesView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,39 +19,42 @@ const router = createRouter({
     {
       path: '/shopping',
       name: 'shopping',
-      component: () => import('../views/ShoppingView.vue')
+      component: ShoppingView
     },
     {
       path: '/actualite',
       name: 'actualite',
-      component: () => import('../views/ActualiteView.vue')
+      component: ActualiteView
     },
     {
       path: '/team',
       name: 'team',
-      component: () => import('../views/TeamView.vue')
+      component: TeamView
     },
     {
       path: '/saison',
       name: 'saison',
-      component: () => import('../views/SaisonView.vue')
+      component: SaisonView
     },
     {
       path: '/projet',
       name: 'projet',
-      component: () => import('../views/ProjetView.vue')
+      component: ProjetView
     },
     {
       path: '/galerie',
       name: 'galerie',
-      component: () => import('../views/GalerieView.vue')
+      component: GalerieView
     },
     {
       path: '/partenaires',
       name: 'partenaires',
-      component: () => import('../views/PartenairesView.vue')
+      component: PartenairesView
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0 }
+  }
 })
 
 export default router
