@@ -58,7 +58,7 @@ onMounted(() => {
           <font-awesome-icon :icon="['fab', 'twitter']" size="2x" />
         </div>
         <div class="social-icon">
-          <font-awesome-icon :icon="['fab', 'instagram']" size="2x" />
+          <a href="https://www.instagram.com/prracingquad/?hl=fr"><font-awesome-icon :icon="['fab', 'instagram']" size="2x" /></a>
         </div>
       </div>
     </div>
@@ -82,9 +82,17 @@ footer {
   font-size: 20px;
 }
 
+.informations-footer p{
+  color: black;
+}
+
 .social-media {
   display: flex;
   justify-content: space-between;
+}
+
+.social-icon a{
+  color: black;
 }
 
 nav {
@@ -97,6 +105,7 @@ nav {
   align-items: center;
   text-decoration: none;
   background-color: #580092;
+  z-index: 1000;
 }
 
 .transparent-background {

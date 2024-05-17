@@ -1,9 +1,21 @@
+<script>
+import InstagramFeed from '../components/InstagramFeed.vue';
+
+export default {
+  name: 'App',
+  components: {
+    InstagramFeed,
+  },
+};
+</script>
+
 <template>
   <div class="container-galerie">
     <div class="overlay-galerie">
-      <p>GALERIE</p>
+      <h2>GALERIE</h2>
     </div>
   </div>
+  <InstagramFeed />
 </template>
 
 <style>
@@ -23,7 +35,7 @@
   padding: 20px;
 }
 
-.overlay-galerie p {
+.overlay-galerie h2 {
   margin: 0px;
   font-size: 112px;
   color: white;

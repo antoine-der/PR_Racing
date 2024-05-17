@@ -1,7 +1,7 @@
 <template>
   <div class="container-accueil">
     <div class="overlay">
-      <p>PASSIONNÉ DE QUAD</p>
+      <h2>PASSIONNÉ DE QUAD</h2>
       <h3>NOTRE PROJET VOUS INTÉRESSE ?</h3>
       <div class="button-contact">
         <button type="button">
@@ -13,21 +13,21 @@
   <div class="valeurs">
     <img src="../assets/pr_racing10.jpg" />
     <div class="valeurs-text">
-      <span>
+      <p>
         Le sport transmet des valeurs qui vont au-delà de la discipline
         spécifique que l'on pratique.
-      </span>
-      <span>- L'humilité</span>
-      <span>- La détermination</span>
-      <span>- Le dépassement de soi</span>
-      <span>- La volonté</span>
-      <span>- La passion</span>
-      <span>- Apporter votre soutien</span>
+      </p>
+      <p>- L'humilité</p>
+      <p>- La détermination</p>
+      <p>- Le dépassement de soi</p>
+      <p>- La volonté</p>
+      <p>- La passion</p>
+      <p>- Apporter votre soutien</p>
     </div>
   </div>
   <div class="association">
-    <div class="association-span">
-      <span>
+    <div class="association-p">
+      <p>
         Notre association PR RACING QUAD a été publiée au journal officiel le 22
         décembre 2022. Le président est Monsieur Philippe ARCIS. L’association
         est domicilier au 811 route de Ternant 01190 Saint Bénigne. SPORTS,
@@ -36,14 +36,14 @@
         les engagements pris auprès de nos partenaires qui nous font confiance
         et qui nous ont tous reconduit leur soutien. Un grand Merci à tous.
         Chacune des étapes nous fait grandir et gagner en expérience.
-      </span>
+      </p>
     </div>
     <img src="../assets/pr_racing4.jpg" />
   </div>
   <div class="beeQuad">
     <img src="../assets/BEE-QUAD.png" />
-    <div class="beeQuad-span">
-      <span>
+    <div class="beeQuad-p">
+      <p>
         Avec la BeeQuad expérience vers la transition écologique dans les sports
         mécaniques, les 72H de Pont-de-Vaux se mettent au vert. Révolution
         annoncée sur la ligne de départ des 72 Heures de Pont-de-Vaux lors de la
@@ -56,17 +56,17 @@
         organisateurs des 72Heures sont totalement ouverts à ce projet qu’ils
         accueillent avec intérêt, conscients des ouvertures futures qu’il va
         permettre en termes d’innovation et de transition écologique.
-      </span>
+      </p>
     </div>
   </div>
   <div class="ela">
-    <div class="ela-span">
-      <span>
+    <div class="ela-p">
+      <p>
         Nous avons mis en place un partenariat avec l’association ELA. Nous
         sommes de plus en plus dans un monde individualiste et il nous a paru
         indispensable de penser à ceux qui ont des difficultés en leur apportant
         notre soutien.
-      </span>
+      </p>
     </div>
     <img src="../assets/ela.jpg" />
   </div>
@@ -94,7 +94,7 @@
   color: white;
 }
 
-.overlay p {
+.overlay h2 {
   margin: 0px;
   font-size: 112px;
   color: white;
@@ -142,7 +142,7 @@
   align-items: flex-end;
 }
 
-.valeurs-text span {
+.valeurs-text p {
   width: 90%;
 }
 
@@ -159,13 +159,13 @@
   width: 30%;
 }
 
-.association-span {
+.association-p {
   display: flex;
   justify-content: center;
   width: 30%;
 }
 
-.association-span span {
+.association-p p {
   width: 90%;
   color: white;
 }
@@ -183,13 +183,13 @@
   width: 30%;
 }
 
-.beeQuad-span {
+.beeQuad-p {
   display: flex;
   justify-content: center;
   width: 30%;
 }
 
-.beeQuad-span span {
+.beeQuad-p p {
   width: 90%;
 }
 
@@ -206,13 +206,13 @@
   width: 30%;
 }
 
-.ela-span {
+.ela-p {
   display: flex;
   justify-content: center;
   width: 30%;
 }
 
-.ela-span span {
+.ela-p p {
   width: 90%;
 }
 </style>

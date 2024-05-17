@@ -1,4 +1,4 @@
-p{
+h2{
     font-family: Jacques François;
 }
 
@@ -6,9 +6,12 @@ a{
     font-family: Jacques François;
 }
 
-span{
+p{
     font-family: Poppins;
     font-size: 25px;
     color: #580092;
     font-weight: bold;
+    margin: 0;
+    line-height: 50px;
 }
+

@@ -1,7 +1,7 @@
 <template>
   <div class="container-actualite">
     <div class="overlay-actualite">
-      <p>ACTUALITE</p>
+      <h2>ACTUALITE</h2>
     </div>
   </div>
 </template>
@@ -23,7 +23,7 @@
   padding: 20px;
 }
 
-.overlay-actualite p {
+.overlay-actualite h2 {
   margin: 0px;
   font-size: 112px;
   color: white;

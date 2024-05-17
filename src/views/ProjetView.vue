@@ -1,7 +1,7 @@
 <template>
   <div class="container-projet">
     <div class="overlay-projet">
-      <p>LE PROJET</p>
+      <h2>LE PROJET</h2>
     </div>
   </div>
 </template>
@@ -23,7 +23,7 @@
   padding: 20px;
 }
 
-.overlay-projet p {
+.overlay-projet h2 {
   margin: 0px;
   font-size: 112px;
   color: white;
