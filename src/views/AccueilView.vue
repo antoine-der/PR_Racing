@@ -26,7 +26,7 @@
     </div>
   </div>
   <div class="association">
-    <div class="association-p">
+    <div class="valeurs-text">
       <p>
         Notre association PR RACING QUAD a été publiée au journal officiel le 22
         décembre 2022. Le président est Monsieur Philippe ARCIS. L’association
@@ -42,7 +42,7 @@
   </div>
   <div class="beeQuad">
     <img src="../assets/BEE-QUAD.png" />
-    <div class="beeQuad-p">
+    <div class="valeurs-text">
       <p>
         Avec la BeeQuad expérience vers la transition écologique dans les sports
         mécaniques, les 72H de Pont-de-Vaux se mettent au vert. Révolution
@@ -60,7 +60,7 @@
     </div>
   </div>
   <div class="ela">
-    <div class="ela-p">
+    <div class="valeurs-text">
       <p>
         Nous avons mis en place un partenariat avec l’association ELA. Nous
         sommes de plus en plus dans un monde individualiste et il nous a paru
@@ -159,14 +159,7 @@
   width: 30%;
 }
 
-.association-p {
-  display: flex;
-  justify-content: center;
-  width: 30%;
-}
-
-.association-p p {
-  width: 90%;
+.association p {
   color: white;
 }
 
@@ -183,16 +176,6 @@
   width: 30%;
 }
 
-.beeQuad-p {
-  display: flex;
-  justify-content: center;
-  width: 30%;
-}
-
-.beeQuad-p p {
-  width: 90%;
-}
-
 .ela {
   display: flex;
   justify-content: center;
@@ -206,13 +189,23 @@
   width: 30%;
 }
 
-.ela-p {
-  display: flex;
-  justify-content: center;
-  width: 30%;
+@media (max-width: 1440px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 834px) {}
+
+@media (max-width: 768px) {
+  .valeurs-text {
+        width: 100%;
+    }
 }
 
-.ela-p p {
-  width: 90%;
+@media (max-width: 480px) {
+    .valeurs-text {
+        width: 60%;
+    }
 }
+
+@media (max-width: 280px) {}
 </style>
