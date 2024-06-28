@@ -10,35 +10,12 @@
       </div>
     </div>
   </div>
-  <div class="valeurs">
-    <img src="../assets/pr_racing10.jpg" />
-    <div class="valeurs-text">
-      <p>
-        Le sport transmet des valeurs qui vont au-delà de la discipline
-        spécifique que l'on pratique.
-      </p>
-      <p>- L'humilité</p>
-      <p>- La détermination</p>
-      <p>- Le dépassement de soi</p>
-      <p>- La volonté</p>
-      <p>- La passion</p>
-      <p>- Apporter votre soutien</p>
-    </div>
-  </div>
-  <div class="association">
-    <div class="valeurs-text">
-      <p>
-        Notre association PR RACING QUAD a été publiée au journal officiel le 22
-        décembre 2022. Le président est Monsieur Philippe ARCIS. L’association
-        est domicilier au 811 route de Ternant 01190 Saint Bénigne. SPORTS,
-        ACTIVITES DE PLAIN AIR (Sport Mécaniques). Une première saison pleine de
-        sagesse de façon à construire un Team sur des bases solides et respecter
-        les engagements pris auprès de nos partenaires qui nous font confiance
-        et qui nous ont tous reconduit leur soutien. Un grand Merci à tous.
-        Chacune des étapes nous fait grandir et gagner en expérience.
-      </p>
-    </div>
-    <img src="../assets/pr_racing4.jpg" />
+  <div class="sponso">
+    <img src="../assets/partenaires/terre_secrete.png" />
+    <img src="../assets/partenaires/sport-2000.png" />
+    <img src="../assets/partenaires/IMP.png" />
+    <img src="../assets/partenaires/Thevenon.png" />
+    <img src="../assets/partenaires/kenny.png" />
   </div>
   <div class="beeQuad">
     <img src="../assets/BEE-QUAD.png" />
@@ -57,6 +34,36 @@
         accueillent avec intérêt, conscients des ouvertures futures qu’il va
         permettre en termes d’innovation et de transition écologique.
       </p>
+    </div>
+  </div>
+  <div class="association">
+    <div class="valeurs-text">
+      <p>
+        Notre association PR RACING QUAD a été publiée au journal officiel le 22
+        décembre 2022. Le président est Monsieur Philippe ARCIS. L’association
+        est domicilier au 811 route de Ternant 01190 Saint Bénigne. SPORTS,
+        ACTIVITES DE PLAIN AIR (Sport Mécaniques). Une première saison pleine de
+        sagesse de façon à construire un Team sur des bases solides et respecter
+        les engagements pris auprès de nos partenaires qui nous font confiance
+        et qui nous ont tous reconduit leur soutien. Un grand Merci à tous.
+        Chacune des étapes nous fait grandir et gagner en expérience.
+      </p>
+    </div>
+    <img src="../assets/pr_racing4.jpg" />
+  </div>
+  <div class="valeurs">
+    <img src="../assets/pr_racing10.jpg" />
+    <div class="valeurs-text">
+      <p>
+        Le sport transmet des valeurs qui vont au-delà de la discipline
+        spécifique que l'on pratique.
+      </p>
+      <p>- L'humilité</p>
+      <p>- La détermination</p>
+      <p>- Le dépassement de soi</p>
+      <p>- La volonté</p>
+      <p>- La passion</p>
+      <p>- Apporter votre soutien</p>
     </div>
   </div>
   <div class="ela">
@@ -89,14 +96,14 @@
   padding: 20px;
 }
 
-.overlay h3{
-  font-size: 48px;
+.overlay h3 {
+  font-size: clamp(10px, 3vw, 48px);
   color: white;
 }
 
 .overlay h2 {
   margin: 0px;
-  font-size: 112px;
+  font-size: clamp(15px, 3vw, 112px);
   color: white;
 }
 
@@ -108,7 +115,7 @@
 }
 
 .button-contact button {
-  border-radius:108px;
+  border-radius: 108px;
   background-color: transparent;
   width: 60%;
   height: auto;
@@ -118,13 +125,28 @@
 
 .button-contact a {
   color: white;
-  font-size: 60px;
+  font-size: clamp(11px, 3vw, 60px);
   text-decoration: none;
+}
+
+.sponso {
+  display: grid;
+  grid-template-columns: repeat(5, 15%);
+  column-gap: 15px;
+  justify-content: center;
+  justify-items: center;
+  background-color: #dbe2dd;
+  height: 250px;
+  padding-top: 15px;
+}
+
+.sponso img {
+  height: 40%;
 }
 
 .valeurs {
   display: flex;
-  background-color: #c7cec9;
+  background-color: #dbe2dd;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -167,7 +189,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #dbe2dd;
+  background-color: #c7cec9;
   width: 100%;
   height: 100%;
 }
@@ -189,23 +211,113 @@
   width: 30%;
 }
 
-@media (max-width: 1440px) {}
+@media (max-width: 1440px) {
+  .overlay {
+    height: 700px;
+  }
 
-@media (max-width: 1024px) {}
+  .valeurs-text {
+    width: 50%;
+  }
+  .valeurs-text p {
+    font-size: 17px;
+  }
 
-@media (max-width: 834px) {}
+  .button-contact button {
+    width: 90%;
+    border: 5px solid white;
+  }
+
+  .sponso{
+    height: 200px;
+  }
+
+  .sponso img {
+    height: 30%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .overlay {
+    height: 500px;
+  }
+
+  .valeurs-text {
+    width: 70%;
+  }
+  .valeurs-text p {
+    font-size: 14px;
+  }
+
+  .sponso{
+    height: 180px;
+  }
+
+  .sponso img {
+    height: 25%;
+  }
+}
+
+@media (max-width: 834px) {
+}
 
 @media (max-width: 768px) {
-  .valeurs-text {
-        width: 100%;
-    }
+  .overlay {
+    height: 500px;
+  }
+
+  .sponso{
+    height: 150px;
+  }
+
+  .sponso img {
+    height: 20%;
+  }
 }
 
 @media (max-width: 480px) {
-    .valeurs-text {
-        width: 60%;
-    }
+  .overlay {
+    height: 200px;
+    justify-content: flex-end;
+  }
+
+  .valeurs-text {
+    width: 100%;
+  }
+
+  .valeurs-text p {
+    font-size: 7px;
+  }
+
+  .button-contact {
+    padding-top: 0px;
+  }
+
+  .button-contact button {
+    width: 90%;
+    border: 3px solid white;
+  }
+
+  .sponso{
+    height: 90px;
+  }
+
+  .sponso img {
+    height: 12%;
+  }
 }
 
-@media (max-width: 280px) {}
+@media (max-width: 400px) {
+  .overlay {
+    height: 200px;
+  }
+
+  .sponso{
+    height: 70px;
+  }
+
+  .sponso img {
+    height: 9%;
+  }
+}
 </style>

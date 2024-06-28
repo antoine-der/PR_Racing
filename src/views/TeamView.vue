@@ -33,8 +33,16 @@
       <p>Mondial 2015 - 2016 - 2023</p>
     </div>
   </div>
+  <div class="benevole">
+    <p>Sans oublier les bénévoles !</p>
+    <img src="../assets/equipe.jpg" />
+  </div>
   <div class="machine">
-    <img src="../assets/machine.png" />
+    <div class="machine-image">
+      <img src="../assets/machine.png" />
+      <img src="../assets/machine2.png" />
+      <img src="../assets/machine3.png" />
+    </div>
     <div class="machine-texte">
       <p>Yamaha 450 YFZ-R (2009)</p>
       <p>Elka Stage 5</p>
@@ -63,7 +71,7 @@
 
 .overlay-team h2 {
   margin: 0px;
-  font-size: 112px;
+  font-size: clamp(15px, 3vw, 112px);
   color: white;
 }
 
@@ -80,6 +88,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .team-content img {
@@ -90,18 +99,139 @@
   color: white;
 }
 
+.benevole {
+  display: grid;
+  grid-template-columns: 80%;
+  background-color: #dbe2dd;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.benevole img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
 .machine {
   display: grid;
-  grid-template-columns: repeat(2, 40%);
+  grid-template-columns: repeat(1, 80%);
   background-color: #c7cec9;
   justify-content: center;
   justify-items: center;
   align-items: center;
 }
 
-.machine img {
+.machine-image {
+  display: grid;
+  grid-template-columns: repeat(3, 40%);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.machine-image img {
   width: 100%;
   height: auto;
   max-width: 100%;
+}
+
+@media (max-width: 1440px) {
+  .overlay-team {
+    height: 700px;
+  }
+
+  .team-content p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .overlay-team {
+    height: 500px;
+  }
+
+  .team{
+    height: 500px;
+  }
+
+  .team-content img {
+    width: 80%;
+  }
+
+  .team-content p {
+    font-size: 17px;
+  }
+
+  .benevole p {
+    font-size: 17px;
+  }
+
+  .machine-texte p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 834px) {
+  .overlay-team {
+    height: 400px;
+  }
+
+  .team{
+    height: 400px;
+  }
+
+  .team-content p {
+    font-size: 14px;
+  }
+
+  .benevole p {
+    font-size: 14px;
+  }
+
+  .machine-texte p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay-team {
+    height: 500px;
+  }
+
+  .team-content p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-team {
+    height: 200px;
+    justify-content: flex-end;
+  }
+
+  .team{
+    height: 200px;
+  }
+
+  .team-content p {
+    font-size: 7px;
+  }
+
+  .benevole{
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .overlay-team {
+    height: 200px;
+  }
+
+  .team-content p {
+    font-size: 5px;
+  }
 }
 </style>

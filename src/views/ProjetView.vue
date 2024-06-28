@@ -6,11 +6,16 @@
   </div>
 </template>
 
-<style>
+<script>
+
+</script>
+
+<style lang="scss">
 .container-projet {
   width: 100%;
   height: auto;
   overflow: hidden;
+  position: relative;
 }
 
 .overlay-projet {
@@ -27,5 +32,7 @@
   margin: 0px;
   font-size: 112px;
   color: white;
+  text-align: center;
 }
+
 </style>

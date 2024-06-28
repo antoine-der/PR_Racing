@@ -37,7 +37,43 @@ export default {
 
 .overlay-galerie h2 {
   margin: 0px;
-  font-size: 112px;
+  font-size: clamp(15px, 3vw, 112px);
   color: white;
+}
+
+@media (max-width: 1440px) {
+  .overlay-galerie {
+    height: 700px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .overlay-galerie {
+    height: 500px;
+  }
+}
+
+@media (max-width: 834px) {
+}
+
+@media (max-width: 768px) {
+  .overlay-galerie {
+    height: 500px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .overlay-galerie {
+    height: 200px;
+    justify-content: flex-end;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .overlay-galerie {
+    height: 200px;
+  }
 }
 </style>

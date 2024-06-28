@@ -62,7 +62,7 @@
 
 .overlay-saison h2 {
   margin: 0px;
-  font-size: 112px;
+  font-size: clamp(15px, 3vw, 112px);
   color: white;
 }
 
@@ -113,13 +113,106 @@
   background-color: #c7cec9;
 }
 
-.texte-saison{
+.texte-saison {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.texte-saison p{
+.texte-saison p {
   margin: 0;
+}
+
+@media (max-width: 1440px) {
+  .overlay-saison {
+    height: 700px;
+  }
+
+  .texte-saison p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .overlay-saison {
+    height: 500px;
+  }
+
+  .texte-saison p {
+    font-size: 15px;
+  }
+
+  .mai {
+    grid-template-columns: repeat(3, 30%);
+  }
+
+  .juin {
+    grid-template-columns: repeat(3, 30%);
+  }
+
+  .aout {
+    grid-template-columns: repeat(3, 30%);
+  } 
+
+  .octobre {
+    grid-template-columns: repeat(3, 30%);
+  } 
+}
+
+@media (max-width: 834px) {
+  .overlay-saison {
+    height: 400px;
+  }
+
+  .texte-saison p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay-saison {
+    height: 500px;
+  }
+
+  .texte-saison p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-saison {
+    height: 200px;
+    justify-content: flex-end;
+  }
+
+  .texte-saison p {
+    font-size: 9px;
+  }
+
+  .mai {
+    grid-template-columns: repeat(3, 35%);
+  }
+
+  .juin {
+    grid-template-columns: repeat(3, 35%);
+  }
+
+  .aout {
+    grid-template-columns: repeat(3, 35%);
+  } 
+
+  .octobre {
+    grid-template-columns: repeat(3, 35%);
+  } 
+}
+
+@media (max-width: 400px) {
+  .overlay-saison {
+    height: 200px;
+  }
+
+  .texte-saison p {
+    font-size: 7px;
+  }
 }
 </style>

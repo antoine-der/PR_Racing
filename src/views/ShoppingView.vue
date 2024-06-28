@@ -74,7 +74,7 @@
 
 .overlay-shopping h2 {
   margin: 0px;
-  font-size: 112px;
+  font-size: clamp(15px, 3vw, 112px);
   color: white;
 }
 
@@ -104,5 +104,65 @@
 
 .item:hover img {
   transform: scale(1.2); /* Zoom de l'image */
+}
+
+@media (max-width: 1440px) {
+  .overlay-shopping {
+    height: 700px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .overlay-shopping {
+    height: 500px;
+  }
+
+  .item p{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 834px) {
+  .item p{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay-shopping {
+    height: 500px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .overlay-shopping {
+    height: 200px;
+    justify-content: flex-end;
+  }
+
+  .shopping{
+    column-gap: 25px;
+  }
+
+  .item p{
+    font-size: 10px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .overlay-shopping {
+    height: 200px;
+  }
+
+  .shopping{
+    column-gap: 20px;
+  }
+
+  .item p{
+    font-size: 8px;
+  }
+
 }
 </style>

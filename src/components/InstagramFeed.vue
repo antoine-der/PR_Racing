@@ -90,4 +90,25 @@ export default {
 .post-video {
   display: block;
 }
+
+@media (max-width: 768px) {
+  .instagram-feed{
+    grid-template-columns: repeat(3, 30%);
+  }
+
+}
+
+@media (max-width: 480px) {
+  .overlay-galerie {
+    height: 200px;
+    justify-content: flex-end;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .overlay-galerie {
+    height: 200px;
+  }
+}
 </style>
