@@ -5,7 +5,7 @@
       <h3>NOTRE PROJET VOUS INTÉRESSE ?</h3>
       <div class="button-contact">
         <button type="button">
-          <a href="contact.php">Nous contacter</a>
+          <a>Nous contacter</a>
         </button>
       </div>
     </div>
