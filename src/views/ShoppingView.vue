@@ -68,7 +68,7 @@
   justify-content: center;
   background: url("../assets/pr_racing1.png") center/cover no-repeat;
   width: 100%;
-  height: 1000px;
+  height: 800px;
   padding: 20px;
 }
 

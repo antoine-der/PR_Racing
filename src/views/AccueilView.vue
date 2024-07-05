@@ -92,7 +92,7 @@
   justify-content: center;
   background: url("../assets/pr_racing2.png") center/cover no-repeat;
   width: 100%;
-  height: 1000px;
+  height: 800px;
   padding: 20px;
 }
 
@@ -210,6 +210,10 @@
 .ela img {
   width: 30%;
 }
+
+.valeurs-text p {
+    font-size: 18px;
+  }
 
 @media (max-width: 1440px) {
   .overlay {
