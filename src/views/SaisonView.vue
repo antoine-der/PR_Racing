@@ -186,24 +186,8 @@
   }
 
   .texte-saison p {
-    font-size: 9px;
+    font-size: 7px;
   }
-
-  .mai {
-    grid-template-columns: repeat(3, 35%);
-  }
-
-  .juin {
-    grid-template-columns: repeat(3, 35%);
-  }
-
-  .aout {
-    grid-template-columns: repeat(3, 35%);
-  } 
-
-  .octobre {
-    grid-template-columns: repeat(3, 35%);
-  } 
 }
 
 @media (max-width: 400px) {
@@ -212,7 +196,24 @@
   }
 
   .texte-saison p {
-    font-size: 7px;
+    font-size: 6px;
   }
+
+  .mai {
+    grid-template-columns: 30% 40% 30%;
+  }
+
+  .juin {
+    grid-template-columns: 30% 40% 30%;
+  }
+
+  .aout {
+    grid-template-columns: 30% 40% 30%;
+  } 
+
+  .octobre {
+    grid-template-columns: 30% 40% 30%;
+  } 
+  
 }
 </style>

@@ -161,7 +161,7 @@
   }
 
   .partenaires-logo{
-    gap: 30px;
+    gap: 20px;
   }
 
   .partenaires h2{

@@ -18,6 +18,10 @@ const handleScroll = () => {
   }
 };
 
+const closeMenu = () => {
+  isMenuOpen.value = false;
+};
+
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
   handleScroll();
@@ -35,14 +39,14 @@ onMounted(() => {
       >
         <img src="./assets/logo_v2.png" class="logo" />
         <div class="nav-links">
-          <RouterLink to="/">Accueil</RouterLink>
-          <RouterLink to="/shopping">Shopping</RouterLink>
-          <RouterLink to="/actualite">Actualite</RouterLink>
-          <RouterLink to="/team">La team</RouterLink>
-          <RouterLink to="/saison">Saison 2024</RouterLink>
-          <RouterLink to="/projet">Le projet</RouterLink>
-          <RouterLink to="/galerie">Galerie</RouterLink>
-          <RouterLink to="/partenaires">Partenaires</RouterLink>
+          <RouterLink to="/" @click="closeMenu">Accueil</RouterLink>
+          <RouterLink to="/shopping" @click="closeMenu">Shopping</RouterLink>
+          <RouterLink to="/actualite" @click="closeMenu">Actualite</RouterLink>
+          <RouterLink to="/team" @click="closeMenu">La team</RouterLink>
+          <RouterLink to="/saison" @click="closeMenu">Saison 2024</RouterLink>
+          <RouterLink to="/projet" @click="closeMenu">Le projet</RouterLink>
+          <RouterLink to="/galerie" @click="closeMenu">Galerie</RouterLink>
+          <RouterLink to="/partenaires" @click="closeMenu">Partenaires</RouterLink>
         </div>
         <div class="hamburger" @click="toggleMenu">
           <div class="bar"></div>
