@@ -36,7 +36,7 @@ export default {
   methods: {
     async fetchInstagramMedia() {
       const accessToken =
-        "IGQWROSmk5R2tNWlBheTRjU3FabzZAybW1Ga1d0UXlNQlR2Nk16bktNMF9vNlJ3SGVybFZAYSWVXQndBUVFTdDBRWGxDU0R5RXNseWt0bEI3cTU5RFVIRjVQRDZAWbWJOdW1XdkxGLWVScEYzZAVFWODhqOTVfUWVzUzgZD";
+        "IGQWROUlV2OXRtLWlPNTcxRmI5TFRoSGowV0dhUDB1LWNtMVZAfZAVVjRG02b3FBR1Y3OF9VVW1aa1JOX2tEYmxKcGJyU0dpZA1Nrb194enJrWWp4ZAmdNUlRQQS14VzVOckdKd20tRnVKMjdfNHZAkTHUyQlQ0aVNUdjAZD";
       const endpoint = `https://graph.instagram.com/me/media?fields=id,caption,media_url,thumbnail_url,permalink,media_type&access_token=${accessToken}`;
 
       try {
