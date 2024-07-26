@@ -35,7 +35,8 @@ export default {
   },
   methods: {
     async fetchInstagramMedia() {
-      const accessToken = process.env.INSTAGRAM_TOKEN;
+      const accessToken = import.meta.env.VITE_INSTAGRAM_TOKEN;
+      console.log(import.meta.env);
       const endpoint = `https://graph.instagram.com/me/media?fields=id,caption,media_url,thumbnail_url,permalink,media_type&access_token=${accessToken}`;
 
       try {
