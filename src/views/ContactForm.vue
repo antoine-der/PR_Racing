@@ -67,7 +67,7 @@ export default {
   methods: {
     async submitForm() {
       try {
-        const response = await axios.post('http://localhost:3000/send-email', this.form);
+        const response = await axios.post('https://pr-racingquad.netlify.app:3000/send-email', this.form);
         if (response.status === 200) {
           this.statusMessage = 'Votre message a été envoyé avec succès !';
         } else {
