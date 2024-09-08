@@ -7,6 +7,7 @@ import SaisonView from '../views/SaisonView.vue'
 import ProjetView from '../views/ProjetView.vue'
 import GalerieView from '../views/GalerieView.vue'
 import PartenairesView from '../views/PartenairesView.vue'
+import ContactFormView from '../views/ContactForm.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -50,6 +51,11 @@ const router = createRouter({
       path: '/partenaires',
       name: 'partenaires',
       component: PartenairesView
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: ContactFormView
     }
   ],
   scrollBehavior(to, from, savedPosition) {

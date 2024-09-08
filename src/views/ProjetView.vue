@@ -128,7 +128,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url("../assets/pr_racing7.jpg") center/cover no-repeat;
+  background: url("../assets/pr_racing13.jpg") center/cover no-repeat;
   width: 100%;
   height: 800px;
   padding: 20px;

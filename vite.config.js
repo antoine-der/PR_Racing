@@ -5,6 +5,15 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    proxy: {
+      '/send-email': {
+        target: 'http://localhost:3000', // L'URL de votre serveur backend Node.js
+        changeOrigin: true, // Nécessaire pour CORS
+        rewrite: (path) => path.replace(/^\/send-email/, '/send-email'), // Réécrit l'URL pour le backend
+      },
+    },
+  },
   plugins: [
     vue(),
   ],

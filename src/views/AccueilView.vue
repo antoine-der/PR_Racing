@@ -5,7 +5,9 @@
       <h3>NOTRE PROJET VOUS INTÉRESSE ?</h3>
       <div class="button-contact">
         <button type="button">
-          <a>Nous contacter</a>
+          <RouterLink to="/contact">
+            <a>Nous contacter</a>
+          </RouterLink>
         </button>
       </div>
     </div>
@@ -119,13 +121,13 @@
   background-color: transparent;
   width: 60%;
   height: auto;
-  border: 7px solid white;
+  border: 5px solid white;
   justify-content: center;
 }
 
 .button-contact a {
   color: white;
-  font-size: clamp(11px, 3vw, 60px);
+  font-size: clamp(11px, 3vw, 40px);
   text-decoration: none;
 }
 
@@ -212,8 +214,8 @@
 }
 
 .valeurs-text p {
-    font-size: 18px;
-  }
+  font-size: 18px;
+}
 
 @media (max-width: 1440px) {
   .overlay {
@@ -232,7 +234,7 @@
     border: 5px solid white;
   }
 
-  .sponso{
+  .sponso {
     height: 200px;
   }
 
@@ -253,7 +255,7 @@
     font-size: 14px;
   }
 
-  .sponso{
+  .sponso {
     height: 180px;
   }
 
@@ -270,7 +272,7 @@
     height: 500px;
   }
 
-  .sponso{
+  .sponso {
     height: 150px;
   }
 
@@ -302,7 +304,7 @@
     border: 3px solid white;
   }
 
-  .sponso{
+  .sponso {
     height: 90px;
   }
 
@@ -316,7 +318,7 @@
     height: 200px;
   }
 
-  .sponso{
+  .sponso {
     height: 70px;
   }
 

@@ -29,7 +29,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url("../assets/pr_racing9.jpg") center/cover no-repeat;
+  background: url("../assets/pr_racing11.jpg") center/cover no-repeat;
   width: 100%;
   height: 800px;
   padding: 20px;
