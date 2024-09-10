@@ -74,10 +74,10 @@ export default {
 
       emailjs
         .send(
-          import.meta.env.VITE_INSTAGRAM_TOKEN,
-          import.meta.env.VITE_INSTAGRAM_TOKEN,
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
           templateParams,
-          import.meta.env.VITE_INSTAGRAM_TOKEN
+          import.meta.env.VITE_EMAILJS_USER_ID
         )
         .then(
           (response) => {
