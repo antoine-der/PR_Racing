@@ -12,7 +12,7 @@
 
       <div class="form-container">
         <h1>Contact Us</h1>
-        <form @submit.prevent="submitForm">
+        <form @submit.prevent="sendEmail">
           <div class="input-group">
             <input
               type="text"
@@ -51,7 +51,7 @@
 </template>
 
 <script>
-import axios from 'axios';
+import emailjs from 'emailjs-com';
 
 export default {
   data() {
@@ -65,18 +65,30 @@ export default {
     };
   },
   methods: {
-    async submitForm() {
-      try {
-        const response = await axios.post('https://pr-racingquad.netlify.app:3000/send-email', this.form);
-        if (response.status === 200) {
-          this.statusMessage = 'Votre message a été envoyé avec succès !';
-        } else {
-          this.statusMessage = 'L\'envoi du message a échoué. Veuillez réessayer.';
-        }
-      } catch (error) {
-        console.error(error);
-        this.statusMessage = 'Une erreur s\'est produite. Veuillez réessayer.';
-      }
+    sendEmail() {
+      const templateParams = {
+        from_name: this.form.fullName,
+        reply_to: this.form.email,
+        message: this.form.message,
+      };
+
+      emailjs
+        .send(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID, // Remplacez par votre service ID
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // Remplacez par votre template ID
+          templateParams,
+          import.meta.env.VITE_EMAILJS_USER_ID // Remplacez par votre user ID fourni par EmailJS
+        )
+        .then(
+          (response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            this.statusMessage = 'Votre message a été envoyé avec succès !';
+          },
+          (error) => {
+            console.log('FAILED...', error);
+            this.statusMessage = 'Erreur lors de l\'envoi du message. Veuillez réessayer.';
+          }
+        );
     },
   },
 };
