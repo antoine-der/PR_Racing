@@ -2,6 +2,7 @@
   <div class="container-accueil">
     <div class="overlay">
       <h2>PASSIONNÉ DE QUAD</h2>
+      <h3>Nous utilisons un carburant 100% décarbonné</h3>
       <h3>NOTRE PROJET VOUS INTÉRESSE ?</h3>
       <div class="button-contact">
         <button type="button">
@@ -12,31 +13,8 @@
       </div>
     </div>
   </div>
-  <div class="sponso">
-    <img src="../assets/partenaires/terre_secrete.png" />
-    <img src="../assets/partenaires/sport-2000.png" />
-    <img src="../assets/partenaires/IMP.png" />
-    <img src="../assets/partenaires/Thevenon.png" />
-    <img src="../assets/partenaires/kenny.png" />
-  </div>
-  <div class="beeQuad">
-    <img src="../assets/BEE-QUAD.png" />
-    <div class="valeurs-text">
-      <p>
-        Avec la BeeQuad expérience vers la transition écologique dans les sports
-        mécaniques, les 72H de Pont-de-Vaux se mettent au vert. Révolution
-        annoncée sur la ligne de départ des 72 Heures de Pont-de-Vaux lors de la
-        prochaine et 37° édition en août 2024. Cette démarche novatrice portée
-        par l’équipe PR Racing Quad, sous la direction de Philippe ARCIS,
-        servira de test à l’équipe comme à l’organisation des 72H. L’innovation
-        réside dans le carburant utilisé qui est produit à base de déchets
-        viticoles français. Le carburant ainsi obtenu est à 95% issu des résidus
-        de marc de raisin et ne modifie pas le moteur de la machine. Les
-        organisateurs des 72Heures sont totalement ouverts à ce projet qu’ils
-        accueillent avec intérêt, conscients des ouvertures futures qu’il va
-        permettre en termes d’innovation et de transition écologique.
-      </p>
-    </div>
+  <div class="bioQuad">
+    <img src="../assets/bioQuad.png" />
   </div>
   <div class="association">
     <div class="valeurs-text">
@@ -68,16 +46,13 @@
       <p>- Apporter votre soutien</p>
     </div>
   </div>
-  <div class="ela">
-    <div class="valeurs-text">
-      <p>
-        Nous avons mis en place un partenariat avec l’association ELA. Nous
-        sommes de plus en plus dans un monde individualiste et il nous a paru
-        indispensable de penser à ceux qui ont des difficultés en leur apportant
-        notre soutien.
-      </p>
-    </div>
-    <img src="../assets/ela.jpg" />
+  <div class="sponso">
+    <img src="../assets/partenaires/3as.jpg" />
+    <img src="../assets/partenaires/terre_secrete.png" />
+    <img src="../assets/partenaires/sport-2000.png" />
+    <img src="../assets/partenaires/IMP.png" />
+    <img src="../assets/partenaires/Thevenon.png" />
+    <img src="../assets/partenaires/kenny.png" />
   </div>
 </template>
 
@@ -99,6 +74,7 @@
 }
 
 .overlay h3 {
+  margin-bottom: 0px;
   font-size: clamp(10px, 3vw, 48px);
   color: white;
 }
@@ -133,17 +109,17 @@
 
 .sponso {
   display: grid;
-  grid-template-columns: repeat(5, 15%);
-  column-gap: 15px;
+  grid-template-columns: repeat(6, 15%);
+  column-gap: 10px;
   justify-content: center;
   justify-items: center;
-  background-color: #dbe2dd;
+  background-color: #580092;
   height: 250px;
   padding-top: 15px;
 }
 
 .sponso img {
-  height: 40%;
+  height: 10%;
 }
 
 .valeurs {
@@ -187,7 +163,7 @@
   color: white;
 }
 
-.beeQuad {
+.bioQuad {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,7 +172,7 @@
   height: 100%;
 }
 
-.beeQuad img {
+.bioQuad img {
   width: 30%;
 }
 
@@ -239,7 +215,7 @@
   }
 
   .sponso img {
-    height: 30%;
+    height: 8%;
   }
 }
 
@@ -260,7 +236,7 @@
   }
 
   .sponso img {
-    height: 25%;
+    height: 5%;
   }
 }
 
@@ -277,7 +253,7 @@
   }
 
   .sponso img {
-    height: 20%;
+    height: 3%;
   }
 }
 
@@ -309,7 +285,7 @@
   }
 
   .sponso img {
-    height: 12%;
+    height: 2%;
   }
 }
 
@@ -323,7 +299,7 @@
   }
 
   .sponso img {
-    height: 9%;
+    height: 1%;
   }
 }
 </style>
